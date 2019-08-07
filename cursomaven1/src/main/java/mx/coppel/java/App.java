@@ -13,9 +13,10 @@ public class App
     public static void main( String[] args )
     {        
         try {
-			System.out.println( "Inicio Generar PDF" );
+
+        	System.out.println( "Inicio Generar PDF" );
 			
-            Document document = new Document();
+        	Document document = new Document();
             
             PdfWriter.getInstance(document, new FileOutputStream(FILE));
             document.open();            
