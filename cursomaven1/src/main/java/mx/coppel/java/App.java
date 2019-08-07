@@ -9,8 +9,8 @@ import com.itextpdf.text.pdf.PdfWriter;
 public class App 
 {
 	private static String FILE = "C:\\JavaArchitect\\example.pdf";
-    
-    public static void main( String[] args )
+	
+	public static void main( String[] args )
     {        
         try {
 
@@ -18,17 +18,17 @@ public class App
 			
         	Document document = new Document();
             
-            PdfWriter.getInstance(document, new FileOutputStream(FILE));
-            document.open();            
+        	PdfWriter.getInstance(document, new FileOutputStream(FILE));
+        	document.open();            
             
-            Paragraph paragraph = new Paragraph("TEXTO EXPORTADO A PDF");
-            document.add(paragraph); 
+        	Paragraph paragraph = new Paragraph("TEXTO EXPORTADO A PDF");
+        	document.add(paragraph); 
             
-            document.close();
+        	document.close();
             
-            System.out.println( "Fin Generar PDF" );
+        	System.out.println( "Fin Generar PDF" );
         } catch (Exception e) {
-            e.printStackTrace();
+        	e.printStackTrace();
         }        
     }     
 }
