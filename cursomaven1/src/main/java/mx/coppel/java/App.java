@@ -11,9 +11,10 @@ public class App
 	private static String FILE = "C:\\JavaArchitect\\example.pdf";
     
     public static void main( String[] args )
-    {
-        System.out.println( "Inicio Generar PDF" );
+    {        
         try {
+			System.out.println( "Inicio Generar PDF" );
+			
             Document document = new Document();
             
             PdfWriter.getInstance(document, new FileOutputStream(FILE));
