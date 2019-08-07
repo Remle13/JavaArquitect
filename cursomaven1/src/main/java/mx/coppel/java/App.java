@@ -19,7 +19,7 @@ public class App
             PdfWriter.getInstance(document, new FileOutputStream(FILE));
             document.open();            
             
-            Paragraph paragraph = new Paragraph("Elmer López Valenzuela");
+            Paragraph paragraph = new Paragraph("TEXTO EXPORTADO A PDF");
             document.add(paragraph); 
             
             document.close();
